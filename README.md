@@ -11,7 +11,7 @@ If I do update it, it will likely take quite some time. Redesigning this entire 
 security a web service needs. SQL injection protetion, account verification, etc. That all takes quite some time. I'll be posting code-in-progress on a beta branch,
 and eventually to 2.0 branch ( or pushing the current code to a legacy branch? )
 
-#Security?
+# Security?
 HAHAHA! There is no security in this project. This was written years ago, I was maybe ten or so when I wrote this. I don't think the system even hashes passwords!
 There is no security! This is the time when I was still learning a lot of PHP, and did my website authentication a lot of the time in JavaScript. Yah, I know.
 Anyways, there is absoultly zero security in this project. It's fun for just playing around, but for the love of god, in the current state, don't use it for
