@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>MeBank2</title>
+    </head>
+
+    <!-- 
+        Right now the website is login/join box
+    -->
+
+    <body>
+        <div class="container">
+            <div class="content-box">
+                <div class="login-form">
+                    <input id="username" type="text">
+                    <input id="password" type="password">
+                </div>
+                <div class="action-buttons">
+                    <button id="login">Login</button>
+                    <button id="signup">Create an Account</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+
+        function validateUsername() {
+            var input = document.getElementById('username');
+            const value = input.value;
+        }
+
+        function validatePassword() {
+            var input = document.getElementById('password');
+            const value = input.value;
+        }
+
+        document.addEventListener('load', () => {
+            document.getElementById('login').addEventListener('click', () => {
+                /* Try to login the user */
+
+            });
+            document.getElementById('signup').addEventListener('click', () => {
+                /* Transfer the user to the login page */
+            });
+        });
+    </script>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "mybank2",
+  "version": "1.0.0",
+  "description": "This is a rewrite of a small pretend banking website I created a while ago. The old version was written in PHP and horribly designed. This version is going to be written in Node.JS and focous on making the website something that could actually be functional!",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.com/repo"
+  },
+  "author": "Ethan Manzi",
+  "license": "ISC",
+  "dependencies": {
+    "sqlite3": "^4.0.9",
+    "express": "^4.17.1"
+  }
+}
