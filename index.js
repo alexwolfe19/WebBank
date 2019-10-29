@@ -1,6 +1,8 @@
 const http = require('http');
 const url = require('url');
 const sqlite3 = require('sqlite3').verbose();
+const express = require("express");
+const myParser = require("body-parser");
 
 const port = 80;
 
@@ -14,12 +16,12 @@ const db = new sqlite3.Database('./database.sqlite', (err) => {
 
 function runQuery(query) { return db.run(query); }
 
-function onConnection(request, response) {
-    const path = request.url;
-    const arguments = url.parse(request.url, true).query;
+var app = express();
+app.use(myParser.urlencoded({extended:true}));
 
+app.use(express.static("public_html"));
+
+app.post("/cgi-bin/login", (request, response) => {
+    const payload = JSON.parse( request.body );
     
-
-}
-
-http.createServer(onConnection).listen(port);
+});

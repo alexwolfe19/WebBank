@@ -1,0 +1,6 @@
+----Example URLS----
+https://mybank.net/cgi-bin/users/login/
+        POST:
+                - "username"
+                - "password"
+https://mybank.net/cgi-bin/users/loggedin
